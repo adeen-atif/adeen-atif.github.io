@@ -1020,7 +1020,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #ebebeb;
+	background: #ffffff;
 }
 .grey-section p.lead {
 	color: #7d7d7d;
@@ -1293,8 +1293,12 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
-#intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+ #intro {
+	position: relative;
+  }
+
+
+  #intro {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1306,6 +1310,21 @@ header .logo a {
 	position: relative;
 	text-align: center;
 }
+  
+  #intro-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  /* .intro-content {
+	position: relative; /* Add this line */
+	z-index: 1; /* Add this line */
+  } 
+  
 .intro-overlay {
 	position: absolute;
 	top: 0;
@@ -1498,6 +1517,7 @@ header .logo a {
 	margin-bottom: 3rem;
 }
 
+
 .intro-info {
 	margin-top: 4.2rem;
 	margin-right: -30px;
@@ -1629,7 +1649,7 @@ header .logo a {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #FF0077;
+	color: #ff0077;
 }
 
 #resume .resume-timeline {
@@ -1790,7 +1810,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	background: #FFFFFF;
+	background: #ff0088;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
@@ -1866,6 +1886,9 @@ header .logo a {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+
+
+
 
 /**
  * responsive:
@@ -2595,5 +2618,8 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
+
+
+
 
 /*# sourceMappingURL=main.css.map */
